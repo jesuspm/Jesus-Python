@@ -2,7 +2,7 @@
 numero1 = input("introduce un numero para comprobar: ")
 numero1 = int(numero1)
 
-if(numero1 %2):
-    print("Es impar")
+if(numero1 %2 == 0):
+    print("Es Parell")
 else:
-    print("Es par")
+    print("Es Senar")

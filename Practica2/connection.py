@@ -2,7 +2,7 @@ import psycopg2
 
 
 conn = psycopg2.connect(
-    database="postgresDB1",
+    database="postgres",
     user='admin',
     password='admin',
     host='localhost',
@@ -12,4 +12,3 @@ conn = psycopg2.connect(
 #Utilizaremos el metodo cursor() para hacer la conexión.
 connection = conn.cursor()
 
-print(connection)

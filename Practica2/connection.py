@@ -10,5 +10,5 @@ conn = psycopg2.connect(
 )
 
 #Utilizaremos el metodo cursor() para hacer la conexión.
-connection = conn.cursor()
+cursor = conn.cursor()
 

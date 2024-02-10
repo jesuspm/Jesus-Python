@@ -10,7 +10,8 @@ sql = """CREATE TABLE USERS(
 
 print(sql)
 # Con el metodo execute() se envia la query
-connection.execute(sql)
-print(connection)
+cursor.execute(sql)
+
+print(cursor)
 # commit para hacer efectivos los cambios de la query a la BDD
 conn.commit()

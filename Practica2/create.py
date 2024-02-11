@@ -1,18 +1,16 @@
-#Insert 
+# Importar conexión desde el módulo connection
 from connection import *
 
-
-#Utilizaremos el metodo cursor() para hacer la conexión.
-connection = conn.cursor()
-
 # El try intenta ejecutar el insert
-try:
-    sql="INSERT INTO public.users(user_name, user_surname, user_age, user_email) VALUES (jesus,pujada,25,jpujada30@gmail.com)"
-    connection.execute()  # Confirmamos la insert
-    print("Inserción exitosa")
-    
-except Exception as e:
-    print(f"Error al insertar datos: {e}")
 
-# Cerrar conexión
-connection.close()
+# Usar comillas simples para los valores de texto y comillas dobles para la consulta SQL
+sql = "INSERT INTO public.users(user_name, user_surname, user_age, user_email) VALUES ('MIREYA', 'SANCHEZ', 22, 'jpujada30@gmail.com')"
+
+# Ejecutar la consulta SQL
+cursor.execute(sql)
+
+# Confirmar la inserción
+conn.commit()
+
+cursor.close()
+print("Inserción exitosa")

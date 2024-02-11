@@ -12,4 +12,5 @@ cursor.execute(sql)
 # Confirmar la inserción
 conn.commit()
 
+cursor.close()
 print("Inserción exitosa")
